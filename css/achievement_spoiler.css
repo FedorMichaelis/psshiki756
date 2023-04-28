@@ -1,0 +1,27 @@
+/* Типа спойлер Достижений */
+
+.p-profiles-show .achievements .cc-achievements .b-achievement {
+    width: 0px;
+    height: 0px;
+  transition: width 0.5s, height 0.5s;
+}
+}
+.p-profiles-show .achievements:hover .cc-achievements .b-achievement{
+    width: 250px;
+    height: 125px;
+   animation: shows 2s;
+}
+ @keyframes shows {
+
+ from {
+
+ opacity: 0;
+
+ }
+
+ to {
+
+ opacity: 1;
+
+ }
+}
