@@ -1,3 +1,4 @@
+
 /* Типа спойлер Достижений */
 
 .p-profiles-show .achievements .cc-achievements .b-achievement {
@@ -25,3 +26,75 @@
 
  }
 }
+/* спойлер достижений франшизы */
+.p-profiles-show .achievements .cc-franchises .b-badge{
+    display:none;
+}
+
+.p-profiles-show .achievements:hover .cc-franchises .b-badge{display: block; animation: shows 1.5s;}
+
+/* спойлер достижений авторы */
+.p-profiles-show .achievements .cc-authors .b-achievement{
+    display:none;
+}
+.p-profiles-show .achievements:hover .cc-authors .b-achievement{display: block; animation: shows 1.5s;}
+/* ключи для анимации shows  */
+   @keyframes shows {
+
+ from {
+
+ opacity: 0;
+
+ }
+
+ to {
+
+ opacity: 1;
+
+ }
+}
+
+/* спойлер достижений надписи */
+.p-profiles-show .achievements .header {
+    display: none;
+}
+
+.p-profiles-show .achievements:hover .header {
+  color: #456; /* Надписи «Общие», «Жанровые» и «Франшизы» */
+   display: block;
+}
+
+
+
+.p-profiles-show .achievements .header{
+	display: none;
+	
+}
+
+
+.p-profiles-show .achievements {
+    margin-bottom: 0px;
+    line-height: 1.65;
+    position: relative;
+}	
+}
+/* Отступы */
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2{
+margin-bottom: 0px;	
+}
+
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(1){
+margin-bottom: 0px;
+}
+
+
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(2){
+margin-bottom: 0px;	
+}
+
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(3){
+margin-bottom: 0px;	
+}
+
+
+
