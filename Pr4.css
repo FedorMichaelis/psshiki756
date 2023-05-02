@@ -1,0 +1,201 @@
+/* AUTO=body_background */ body { background: url(https://i.ibb.co/KqTYLvn/xebelion-matem-denizi-paylasim.jpg) no-repeat fixed top; }
+.p-profiles .profile-head .c-brief header h1 {
+  color: #fff;
+  font-size: 70px;
+}
+.p-profiles .profile-head .c-brief header h1:hover {
+  color: #fff;
+}
+@media screen and (min-width: 1024px){
+.p-profiles .l-page {
+    background: #433a6387;
+}
+.p-profiles .profile-head .c-brief .avatar > img {
+  -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+  mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transition: 2s;
+}
+.p-profiles .profile-head .c-brief .avatar > img:hover {
+  transition: mask-position 1s ease,-webkit-mask-position 1s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+transform: translateY(-20%) scale(1.2);
+    transition: 2s;
+}
+}
+
+@media screen and (max-width: 1024px){
+.p-profiles .l-page {
+    background: #1e1e36eb;
+}
+}
+
+@media screen and (min-width: 1200px){
+.p-profiles .profile-head .c-brief .avatar {
+    float: left;
+    max-width: 200px;
+}
+.p-profiles .profile-head .c-brief .avatar img {
+    height: 200px;
+    width: 200px;
+  border-radius: 0%;
+}
+}
+@media screen and (min-width: 768px){
+/* Гиф аватар и неон при наведении курсора */
+.p-profiles .profile-head .c-brief .avatar > img {
+	content: url("https://s12.gifyu.com/images/anime49.gif");
+}
+.p-profiles .profile-head .c-brief .avatar > img {
+border-radius: 25px;	
+}
+}
+@media screen and (min-width: 1200px) {
+/* Закруглённые углы центральная область сайта */
+.p-profiles .l-page{
+border-radius: 0.69%;	
+}
+
+/* Отступ от меню */
+.l-top_menu-v2 {
+margin-bottom: 10%;
+}
+/* Типа спойлер Достижений */
+.p-profiles-show .achievements .cc-achievements .b-achievement {
+    width: 0px;
+    height: 0px;
+    transition: width 0.5s, height 0.5s;
+}
+.p-profiles-show .achievements:hover .cc-achievements .b-achievement{
+    width: 250px;
+    height: 125px;
+    animation: shows 2s;
+}
+ @keyframes shows {
+ from {
+ opacity: 0;
+ }
+ to {
+    opacity: 1;
+ }
+}
+/* спойлер достижений франшизы */
+.p-profiles-show .achievements .cc-franchises .b-badge{
+    display:none;
+}
+.p-profiles-show .achievements:hover .cc-franchises .b-badge{display: block; animation: shows 1.5s;}
+/* спойлер достижений авторы */
+.p-profiles-show .achievements .cc-authors .b-achievement{
+    display:none;
+}
+.p-profiles-show .achievements:hover .cc-authors .b-achievement{display: block; animation: shows 1.5s;}
+/* ключи для анимации shows  */
+    @keyframes shows {
+    from {
+    opacity: 0;
+ }
+    to {
+    opacity: 1;
+ }
+}
+/* спойлер достижений надписи */
+.p-profiles-show .achievements .header {
+    display: none;
+}
+
+.p-profiles-show .achievements:hover .header {
+    color: #456; /* Надписи «Общие», «Жанровые» и «Франшизы» */
+    display: block;
+}
+.p-profiles-show .achievements .header{
+    display: none;
+	
+}
+.p-profiles-show .achievements {
+    margin-bottom: 0px;
+    line-height: 1.65;
+    position: relative;
+}	
+/* Отступы */
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2{
+    margin-bottom: 0px;}
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(1){
+    margin-bottom: 0px;}
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(2){
+    margin-bottom: 0px;	}
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.cc-2 > div:nth-child(3){
+    margin-bottom: 0px;}
+}
+/* Альтернативное расположение блоков профиля */
+/* Срыть график активности */
+ #profiles_show .profile-content > .cc-2 > .c-left {
+    display: none;
+  }
+@media screen and (min-width: 768px) {
+  #profiles_show .profile-content > .cc-2 > .c-right {
+    float: none;
+    width: 100%;
+  }
+
+  #profiles_show .profile-content > .cc-2 > .c-right::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a {
+    float: right;
+    width: 23%;
+    overflow: hidden;
+    margin: 0 !important;
+  }
+  #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a > .c-column {
+    width: 100%;
+    margin: 0;
+  }
+  #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a > :last-child {
+	margin-top: 15px;
+  }
+/* Разметка блока Избранное */
+#profiles_show .profile-content > .cc-2 > .c-right > .block {
+    width: 100%;
+    padding-right: 0px;
+    overflow: hidden;
+  }
+}
+/* Скрываем историю */
+.p-profiles .profile-head .c-history {
+  visibility: hidden;
+}
+@media screen and (min-width: 1060px) {
+/* Альтернативное расположение клубов и друзей */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30{
+	position: absolute;
+	right: 0;
+  bottom: 270px;
+}
+}
+@media screen and (max-width: 1059px) {
+/* Альтернативное расположение клубов и друзей сдвиг при уменшении разрешения */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30{
+float: right;
+width: 100%;
+overflow: hidden;
+margin: 0
+}
+/* Изминение маштабов миниатюр */
+.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img{
+width: 60%;
+}
+.b-club .logo {
+width: 60%;	
+}
+/* Скрываем историю */
+.p-profiles .profile-head .c-history {
+  display: none;
+}
+}
