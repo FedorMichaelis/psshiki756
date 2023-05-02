@@ -180,3 +180,22 @@ margin-bottom: 10%;
 }
 }
 @media screen and (max-width: 1059px) {
+/* Альтернативное расположение клубов и друзей сдвиг при уменшении разрешения */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30{
+float: right;
+width: 100%;
+overflow: hidden;
+margin: 0
+}
+/* Изминение маштабов миниатюр */
+.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img{
+width: 60%;
+}
+.b-club .logo {
+width: 60%;	
+}
+/* Скрываем историю */
+.p-profiles .profile-head .c-history {
+  display: none;
+}
+}
